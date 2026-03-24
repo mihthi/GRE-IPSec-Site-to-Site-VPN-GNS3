@@ -14,8 +14,8 @@ Triển khai giải pháp VPN Site-to-Site kết hợp GRE và IPsec trên mô p
     - **3. Cấu hình IPSec**
     
 ## I. Cấu hình trên GNS3
-- Topology  như sau:(./mohinh.png) 
-- 
+- Topology  như sau: (images/mohinh.png) 
+
   
 ### 1. Cấu hình OSPF
   - Với sơ đồ mạng trên, ta thực hiện cấu hình OSPF trên 8 router với Process ID OSPF là 1, Area là 100.
