@@ -1,0 +1,8 @@
+// Thực hiện trên R3, R4, R5, R6, R7, R8
+conf t
+router ospf 1
+ network 10.0.0.0 0.255.255.255 area 0
+ exit
+
+// Kiểm tra tại SITE-A (R1): Phải ping thông IP WAN của SITE-B
+ping 10.0.100.1
