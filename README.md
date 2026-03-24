@@ -14,7 +14,7 @@ Triển khai giải pháp VPN Site-to-Site kết hợp GRE và IPsec trên mô p
     - **3. Cấu hình IPSec**
     
 ## I. Cấu hình trên GNS3
-- Topology  như sau:(./sodo1.png)
+- Topology  như sau:(./mohinh.png) 
 - 
   
 ### 1. Cấu hình OSPF
