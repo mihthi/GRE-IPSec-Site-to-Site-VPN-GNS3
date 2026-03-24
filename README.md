@@ -1,4 +1,5 @@
-<img width="549" height="503" alt="image" src="https://github.com/user-attachments/assets/d7afbe45-0969-428e-9671-853e9401c2e7" /><img width="1326" height="808" alt="image" src="https://github.com/user-attachments/assets/8df1ee63-9e6a-4997-b3e7-e29430ffba7a" /># GRE-IPSec-Site-to-Site-VPN-GNS3
+
+# GRE-IPSec-Site-to-Site-VPN-GNS3
 Triển khai giải pháp VPN Site-to-Site kết hợp GRE và IPsec trên mô phỏng GNS3.
 
 ## Nội dung
