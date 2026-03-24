@@ -1,0 +1,30 @@
+conf t
+! --- Phase 1: ISAKMP ---
+crypto isakmp policy 10
+ encryption aes 256
+ hash md5
+ authentication pre-share
+ group 2
+ exit
+crypto isakmp key 123 address 10.0.90.1
+
+! --- Phase 2: IPsec ---
+crypto ipsec transform-set HTD esp-aes 256 esp-md5-hmac
+ mode transport
+ exit
+
+crypto ipsec profile GRE-PROFILE
+ set transform-set HTD
+ exit
+
+! --- Interface Tunnel1 ---
+int t1
+ ip address 192.168.0.2 255.255.255.0
+ tunnel source sl2/1
+ tunnel destination 10.0.90.1
+ tunnel protection ipsec profile GRE-PROFILE
+ no shutdown
+ exit
+
+! --- Routing ---
+ip route 192.168.10.0 255.255.255.0 192.168.0.1
